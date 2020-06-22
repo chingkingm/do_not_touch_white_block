@@ -1,0 +1,37 @@
+<!--
+ * @Author: chingkingm
+ * @Date: 2020-06-22 14:59:41
+ * @LastEditTime: 2020-06-22 16:28:23
+ * @FilePath: \多媒体教育与娱乐\大作业\code_file\main.html
+ * @Description: 
+--> 
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>别踩白块</title>
+    <link rel="stylesheet" href="mycss.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="div0">
+        <div id="div_sco">
+            <span>当前成绩</span>
+            <span>最好成绩</span>
+        </div>
+        <div id="div_ctx">
+            <canvas width="360px" height="720px" id="can">
+
+            </canvas>
+        </div>
+        <div id="div_btn">
+            <button>重新开始</button>
+            <button onclick="startGame()">
+                开始
+            </button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
