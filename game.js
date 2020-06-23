@@ -1,7 +1,7 @@
 /*
  * @Author: chingkingm
  * @Date: 2020-06-22 15:10:23
- * @LastEditTime: 2020-06-23 14:53:23
+ * @LastEditTime: 2020-06-23 15:46:25
  * @FilePath: \多媒体教育与娱乐\大作业\code_file\game.js
  * @Description: 
  */ 
@@ -34,6 +34,8 @@ var vm = new Vue({
 //     }
 // });
 function preload(){
+    document.getElementById('div_ctx').addEventListener('click',showclick);
+    c.style.cursor = 'pointer';
     random_block();
     flag_pre = 1;
     if (!(score_h = localStorage.getItem("score"))) {
@@ -206,6 +208,8 @@ function fail(){
     clearInterval(t0);
     document.getElementsByTagName('audio')[0].pause();
     document.getElementsByTagName('audio')[0].currentTime = 0;
+    document.getElementById('div_ctx').removeEventListener('click',showclick);
+    c.style.cursor = 'not-allowed';
     c.width = c.width;
     for (let i = 0; i < 4; i++) {
         draw_block(i, block_color[i]);

@@ -26,6 +26,7 @@ canvas{
 }
 span{
     display: inline-block;
+    cursor: default;
 }
 .s_h{
     position: relative;
@@ -46,6 +47,7 @@ button {
     color: white;
     position: relative;
     left: 130px;
+    cursor: pointer;
 }
 audio{
     position: relative;
