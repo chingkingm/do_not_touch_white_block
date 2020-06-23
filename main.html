@@ -1,7 +1,7 @@
 <!--
  * @Author: chingkingm
  * @Date: 2020-06-22 14:59:41
- * @LastEditTime: 2020-06-23 15:42:20
+ * @LastEditTime: 2020-06-23 16:58:56
  * @FilePath: \多媒体教育与娱乐\大作业\code_file\main.html
  * @Description: 
 --> 
@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>别踩白块</title>
     <link rel="stylesheet" href="mycss.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 </head>
 <body>
     <div id="div0">
@@ -41,10 +41,17 @@
                     <sup>New</sup>
                 </span>
             </div>
+            <div id="div_info" v-if="condition2">
+                精神小伙小组作业-别踩白块
+            </div>
             
         </div>
         <audio controls="controls" loop = "loop">
-            <source src="卡农.mp3" type="audio/mpeg">
+            <source src="bgm.mp3" type="audio/mpeg">
+            您的浏览器太low了,不支持播放
+        </audio>
+        <audio controls="controls" id="audio1">
+            <source src="bgm.mp3" type="audio/mpeg">
             您的浏览器太low了,不支持播放
         </audio>
     </div>

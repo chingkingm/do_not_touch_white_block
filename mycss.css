@@ -13,7 +13,7 @@ canvas{
 #div_sco{
     height: 40px;
 }
-#div_f{
+#div_f,#div_info{
     width: 360px;
     height: 200px;
     border: black solid 1px;
@@ -23,6 +23,10 @@ canvas{
     color: rgb(0, 44, 90);
     position: relative;
     top: -490px;
+}
+#div_info{
+    line-height: 200px;
+    font-size: 25px;
 }
 span{
     display: inline-block;
