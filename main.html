@@ -1,7 +1,7 @@
 <!--
  * @Author: chingkingm
  * @Date: 2020-06-22 14:59:41
- * @LastEditTime: 2020-06-22 16:28:23
+ * @LastEditTime: 2020-06-22 22:35:00
  * @FilePath: \多媒体教育与娱乐\大作业\code_file\main.html
  * @Description: 
 --> 
@@ -16,20 +16,22 @@
 </head>
 <body>
     <div id="div0">
-        <div id="div_sco">
-            <span>当前成绩</span>
-            <span>最好成绩</span>
-        </div>
-        <div id="div_ctx">
-            <canvas width="360px" height="720px" id="can">
-
-            </canvas>
-        </div>
-        <div id="div_btn">
-            <button>重新开始</button>
-            <button onclick="startGame()">
-                开始
-            </button>
+        <div id="div1">
+            <div id="div_sco">
+                <span>当前成绩</span>
+                <span>最好成绩</span>
+            </div>
+            <div id="div_ctx" onclick="showclick(event)">
+                <canvas width="360px" height="720px" id="can">
+            
+                </canvas>
+            </div>
+            <div id="div_btn">
+                <button>重新开始</button>
+                <button onclick="startGame()">
+                    开始
+                </button>
+            </div>
         </div>
     </div>
     <script src="game.js"></script>
