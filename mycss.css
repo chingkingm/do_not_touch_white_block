@@ -13,3 +13,37 @@ canvas{
 #div_sco{
     height: 40px;
 }
+#div_f{
+    width: 360px;
+    height: 200px;
+    border: black solid 1px;
+    background-color: rgb(255, 205, 1);
+    text-align: center;
+    line-height: 100px;
+    color: rgb(0, 44, 90);
+    position: relative;
+    top: -490px;
+}
+span{
+    display: inline-block;
+}
+.s_h{
+    position: relative;
+    left: 190px;
+}
+#span_finish{
+    font-size: 2em;
+}
+#span_show{
+    font-size: 2em;
+}
+button {
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    border: 0px;
+    background-color: firebrick;
+    color: white;
+    position: relative;
+    left: 130px;
+}
