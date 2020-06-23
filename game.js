@@ -1,7 +1,7 @@
 /*
  * @Author: chingkingm
  * @Date: 2020-06-22 15:10:23
- * @LastEditTime: 2020-06-23 11:11:09
+ * @LastEditTime: 2020-06-23 14:53:23
  * @FilePath: \多媒体教育与娱乐\大作业\code_file\game.js
  * @Description: 
  */ 
@@ -62,7 +62,12 @@ function check_start(){
 }
 function startGame(){
     t0 = setInterval(game, 5);
+    t1 = setInterval(higherspeed,15000);
+    document.getElementsByTagName('audio')[0].play();
     flag_start = 1;
+}
+function higherspeed(){
+    speed += 1;
 }
 function showclick(ev){
     let x = ev.clientX - canvas_x;
@@ -199,6 +204,8 @@ function random_block() {
 }
 function fail(){
     clearInterval(t0);
+    document.getElementsByTagName('audio')[0].pause();
+    document.getElementsByTagName('audio')[0].currentTime = 0;
     c.width = c.width;
     for (let i = 0; i < 4; i++) {
         draw_block(i, block_color[i]);
@@ -206,12 +213,17 @@ function fail(){
     draw_horizontal();
     draw_vertical();
     flag_start = 0;
-    
     vm.condition0 = true;
 }
 function restart(){
     clearInterval(t0);
+    clearInterval(t1);
+    speed = 1;
+    vm.condition0 = false;
+    vm.condition1 = false;
     flag_start = 0;
+    document.getElementsByTagName('audio')[0].pause();
+    document.getElementsByTagName('audio')[0].currentTime = 0;
     t = 0;
     score_c = 0;
     document.getElementById("score_c").innerText = score_c;

@@ -47,3 +47,7 @@ button {
     position: relative;
     left: 130px;
 }
+audio{
+    position: relative;
+    left: -100%;
+}
