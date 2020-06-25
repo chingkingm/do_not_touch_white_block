@@ -7,7 +7,7 @@
 --> 
 # do_not_touch_white_block
 ## 别踩白块
-<del>"BLACK LIVES MATTER" 
+<del>"BLOCK LIVES MATTER" 
 
 使用JavaScript实现的简易别踩白块，具有基本的游戏功能，可以记录分数。 
 
